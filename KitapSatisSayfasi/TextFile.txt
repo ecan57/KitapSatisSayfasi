@@ -1,0 +1,25 @@
+﻿Kitap-- Kısıt 5 tablo
+Satış
+Sepet
+Üyelik
+Kampanya
+Kargo Takip
+En çok satılanlar,kampanyalı ürünler, fiyata göre sırala, en çok tavsiye edilenler
+Kategoriler 
+Ödeme
+Admin Paneli
+Stok==>Stok işlemleri
+---------------------------------------------------------------
+
+Kitap(KitapID,Ad,YazarID,Fiyat,YayinEviID,KapakResmi,Ozet,BasımTarihi,StokAdeti,TavsiyeSayisi)
+Yazar(YazarID,YazarAd,Biyografi)
+Kategori(KategoriID,KategoriAd)
+YayinEvi(YEID,YayinEviAdi,Adres,Telefon)
+KitapKategori(KKID,KitapID,KategoriID)
+
+Uye(Adres,)
+Rol()Admin(Admin),Üye(Sepet işlemleri),
+Sepet(SepetID,KitapID,UyeID,Adet)
+
+Satis(SatisID,UyeID,Tarih,ToplamTutar)
+SatisDetay(DetayID,SatisID,KitapID,Adet,Fiyat)

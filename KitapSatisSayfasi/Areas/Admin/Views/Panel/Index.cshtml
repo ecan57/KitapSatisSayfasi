@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Admin Panel</h1>
+
+<br /><br />
+      <table style="table">
+          <tr>
+              @* asp leri kullanabilmek için identitydeki pages klasöründe bulunan viewımport.cshtml kopyalayıp admin ve üye dosyasına yapıştırdık.  *@
+              <td>
+                  <ul>@* type = none yazarsak ul nin yanına çalıştığında listedekilerin başındaki noktalar kalkacak *@
+                      <li>
+                          <a asp-controller="Yazar" asp-action="Index" asp-area="Admin" class="font-weight-bold">
+                              Yazar Bilgisi
+                          </a>
+                      </li>
+                      <li>
+                          <a asp-controller="Yayinevi" asp-action="Index" asp-area="Admin" class="font-weight-bold">
+                              Yayınevi Bilgisi
+                          </a>
+                      </li>
+                      <li>
+                          <a asp-controller="Kategori" asp-action="Index" asp-area="Admin" class="font-weight-bold">
+                              Kategori Bilgisi
+                          </a>
+                      </li>
+                      <li>
+                          <a asp-controller="Kitap" asp-action="Index" asp-area="Admin" class="font-weight-bold">
+                              Kitap Bilgisi
+                          </a>
+                      </li>
+                      <li>
+                          <a asp-controller="KitapKategori" asp-action="Index" asp-area="Admin" class="font-weight-bold">
+                              Kitap Kategorileri
+                          </a>
+                      </li>
+                  </ul>
+              </td>
+              <td>
+                  
+              </td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+          </tr>
+      </table>
